@@ -8,8 +8,8 @@ authors:
   - family-names: Banasihan
     given-names: Mark Julius
     orcid: "https://orcid.org/0009-0001-8121-2878"
-repository-code: "https://github.com/mj3b/rgds-ai-governance"
-url: "https://github.com/mj3b/rgds-ai-governance"
+repository-code: "https://github.com/node-and-norm/rgds-ai-governance"
+url: "https://github.com/node-and-norm/rgds-ai-governance"
 license: Apache-2.0
 abstract: >-
   Working governance method/profile for bounded AI participation in consequential

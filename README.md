@@ -1,5 +1,9 @@
 # AI Assistance Governance
 
+[Node & Norm research directory](https://github.com/node-and-norm) · AI Assistance Governance method/profile within the decision-governance program.
+
+Repository stewardship moved to Node & Norm on 2026-09-15. Published versions, authorship, and research-status claims retain their existing scope.
+
 A working method/profile for bounded AI participation in consequential decisions.
 
 Research question: Can a documented AI participation boundary and a two-part dependency assessment make the non-AI basis of an AI-assisted decision inspectable?
@@ -16,9 +20,9 @@ GDI: general decision architecture
 RGDS Independent Study: separate historical/exploratory research
 ```
 
-[GDI](https://github.com/mj3b/governed-decision-intelligence) supplies the general architecture. This profile defines participation rules and an assessment procedure. [RGDS v2.0.1](https://github.com/mj3b/rgds/tree/v2.0.1) supplies the implementation contract inspected for this revision. This hierarchy describes conceptual roles, without asserting a formal cross-version conformance test. Changes to any layer require a compatibility review.
+[GDI](https://github.com/node-and-norm/governed-decision-intelligence) supplies the general architecture. This profile defines participation rules and an assessment procedure. [RGDS v2.0.1](https://github.com/node-and-norm/rgds/tree/v2.0.1) supplies the implementation contract inspected for this revision. This hierarchy describes conceptual roles, without asserting a formal cross-version conformance test. Changes to any layer require a compatibility review.
 
-The [independent study](https://github.com/mj3b/rgds-independent-study) is separate historical/exploratory source review and modeling work. It is not validation evidence for this profile. Its DOI belongs to that research object and is not this repository's identifier. Proposed Node & Norm placement is `NN-DE`, method/profile; admission remains pending.
+The [independent study](https://github.com/node-and-norm/rgds-independent-study) is separate historical/exploratory source review and modeling work. It is not validation evidence for this profile. Its DOI belongs to that research object and is not this repository's identifier. Proposed Node & Norm placement is `NN-DE`, method/profile; admission remains pending.
 
 ## Six governance covenants
 
@@ -103,8 +107,8 @@ rgds-ai-governance/
 | Open evidence gates | Qualified substantive application, independent assessment, field effectiveness |
 | Admission | Pending RGDS-family reassessment and institutional decision; no Registry admission asserted |
 
-No deployment study, regulatory outcome improvement, or demonstrated human independence is established here. A schema-valid record can contain fabricated or unexamined claims. Reviewer competence, evidence access, time, organizational authority, and actual interventions require separate evidence. [HIT](https://github.com/mj3b/human-influence-telemetry) is an adjacent assessment method for practical human influence; no HIT evaluation is claimed for this profile.
+No deployment study, regulatory outcome improvement, or demonstrated human independence is established here. A schema-valid record can contain fabricated or unexamined claims. Reviewer competence, evidence access, time, organizational authority, and actual interventions require separate evidence. [HIT](https://github.com/node-and-norm/human-influence-telemetry) is an adjacent assessment method for practical human influence; no HIT evaluation is claimed for this profile.
 
-[CHANGELOG.md](CHANGELOG.md) preserves historical entries and records corrections separately. Cite this method using [CITATION.cff](CITATION.cff), for version 1.1.0; no DOI is assigned. See the [v1.1.0 release](https://github.com/mj3b/rgds-ai-governance/releases/tag/v1.1.0).
+[CHANGELOG.md](CHANGELOG.md) preserves historical entries and records corrections separately. Cite this method using [CITATION.cff](CITATION.cff), for version 1.1.0; no DOI is assigned. See the [v1.1.0 release](https://github.com/node-and-norm/rgds-ai-governance/releases/tag/v1.1.0).
 
 Author: **Mark Julius Banasihan**, [ORCID](https://orcid.org/0009-0001-8121-2878), [GitHub](https://github.com/mj3b). Existing authorship is retained. Codex assisted this remediation with repository inspection, drafting, and validation scripts under the owner's instructions; the owner authorized merge and release. This authorization does not establish independent review or substantive field validation. See [NOTICE](NOTICE) and [LICENSE](LICENSE).

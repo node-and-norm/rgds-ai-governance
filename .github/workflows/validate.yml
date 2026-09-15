@@ -19,7 +19,7 @@ jobs:
       - name: Checkout pinned RGDS reference
         uses: actions/checkout@v4
         with:
-          repository: mj3b/rgds
+          repository: node-and-norm/rgds
           ref: f6fa066c7e53d1d89d68ac8ef424b559ef58be34
           path: .reference-rgds
       - name: Install reference validator dependency
