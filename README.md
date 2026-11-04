@@ -1,114 +1,89 @@
-# AI Assistance Governance
+<h1>
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/research/v1/banner-mobile-dark.svg">
+  <img src="assets/research/v1/banner-dark.svg" alt="AI Assistance Governance" width="1000">
+</picture>
+</h1>
 
-[Node & Norm research directory](https://github.com/node-and-norm) · AI Assistance Governance method/profile within the decision-governance program.
+[![Status: Working method](assets/research/v1/badges/status-dark.svg)](CITATION.cff) [![Version: v1.1.0](assets/research/v1/badges/version-dark.svg)](CITATION.cff) [![License: Apache-2.0](assets/research/v1/badges/license-dark.svg)](LICENSE)
 
-Repository stewardship moved to Node & Norm on 2026-09-15. Published versions, authorship, and research-status claims retain their existing scope.
+Can a reviewer reconstruct the human basis of a decision that involved AI? This working method records AI participation and separates record completeness from substantive review of the decision's evidence. [AI Dependency Test](docs/ai-dependency-test.md).
 
-A working method/profile for bounded AI participation in consequential decisions.
+[Policy reader: understand in 90 seconds](#research-in-90-seconds) · [Reviewer: inspect the method](#method-and-evidence) · [Engineer: run the checks](docs/reference-verification.md)
 
-Research question: Can a documented AI participation boundary and a two-part dependency assessment make the non-AI basis of an AI-assisted decision inspectable?
+## At a glance
 
-RGDS records assigned human ownership, approval, and review. Schema and semantic validation check recorded structure and selected internal constraints. They do not prove human authorship, substantive human judgment, or that assigned authority had practical force. Practical human influence requires separate assessment.
+| | Current account |
+| :--- | :--- |
+| Purpose | Make AI participation and the human decision basis inspectable. [Method](docs/ai-dependency-test.md) |
+| Status | Working method/profile. Independent review and field effectiveness remain open. [Status record](docs/remediation-report.md) |
+| Evidence type | Method documentation, a hypothetical example and selected contract checks. [Example](examples/rgds-dec-0003-ai-assisted-conditional-go.md), [validation scope](docs/validation.md) |
+| Version | v1.1.0, September 10, 2026. [Citation metadata](CITATION.cff), [release](https://github.com/node-and-norm/rgds-ai-governance/releases/tag/v1.1.0) |
+| License | [Apache-2.0](LICENSE), with existing [attribution](NOTICE). |
+| Cite | [Citation metadata](CITATION.cff). No DOI is assigned. |
 
-## Architecture and scope
+## Research in 90 seconds
 
-```text
-GDI: general decision architecture
-  -> AI Assistance Governance: method/profile for bounded AI participation
-    -> RGDS: regulated biopharma reference implementation
+A decision record can name an approver while leaving the basis for the judgment unclear. This profile asks the reviewer to identify what AI contributed and which independent sources support the material reasons for the decision. [Dependency method](docs/ai-dependency-test.md).
 
-RGDS Independent Study: separate historical/exploratory research
+The contribution is a two-part assessment. First, retain the complete record and check its required structure. Then ask a qualified reviewer whether the material rationale can be reconstructed from non-AI sources. Each part receives its own result. [Procedure](docs/ai-dependency-test.md).
+
+Six governance covenants define the proposed adoption requirements. They cover bounded AI tasks, assigned human authority, explicit invocation, review, risk acceptance and evidence. The repository documents these requirements; an adopting organization must implement and assess them. [Contract](contracts/non-agentic-ai-contract.md).
+
+## Method and evidence
+
+The AI Dependency Test excludes model output from the evidentiary basis while preserving the original record and its truthful AI disclosure. Deleting the disclosure would remove part of the history under examination. [Method](docs/ai-dependency-test.md), [pinned contract check](scripts/check_rgds_contract.py).
+
+| Material | Available evidence | Remaining review |
+| :--- | :--- | :--- |
+| Working method | Two-part dependency procedure and six covenants. [Procedure](docs/ai-dependency-test.md), [contract](contracts/non-agentic-ai-contract.md) | Qualified application and independent assessment remain open. [Status](docs/remediation-report.md) |
+| Hypothetical example | An illustrative AI-assisted conditional decision. [Example](examples/rgds-dec-0003-ai-assisted-conditional-go.md) | Structural assessment is unperformed; substantive independence is indeterminate. [Example status](examples/rgds-dec-0003-ai-assisted-conditional-go.md) |
+| Technical checks | Local documentation checks and selected RGDS v2.0.1 contract conditions. [Validation](docs/validation.md) | Source truth, reviewer competence and practical influence require separate evidence. [Contract checker](scripts/check_rgds_contract.py) |
+| Framework crosswalk | Interpretive mappings to external frameworks. [Crosswalk](docs/framework-crosswalk.md) | Applicability, legal conformity and control effectiveness need context-specific review. [Crosswalk limits](docs/framework-crosswalk.md) |
+
+The repository sits between a general architecture and a reference implementation. [Governed Decision Intelligence](https://github.com/node-and-norm/governed-decision-intelligence) supplies the architectural context. [RGDS v2.0.1](https://github.com/node-and-norm/rgds/tree/f6fa066c7e53d1d89d68ac8ef424b559ef58be34) supplies the inspected contract. The [independent study](https://github.com/node-and-norm/rgds-independent-study) provides separate exploratory context. These relationships describe conceptual roles. [Architecture and scope](README-2026-11-03.md#architecture-and-scope).
+
+## Known limits
+
+A structurally valid record can contain fabricated or unexamined claims. The method therefore leaves evidence access, reviewer competence, time, institutional authority and actual intervention to separate assessment. Field effectiveness remains unestablished. [Limits and open gates](docs/remediation-report.md).
+
+The earlier removability account remains available under its supersession notice. The current method distinguishes record completeness from substantive independence. [Preserved historical text](docs/ai-removability-proof.md), [current test](docs/ai-dependency-test.md).
+
+## Reproduce the checks
+
+The [verification guide](docs/reference-verification.md) gives exact commands and expected output. The documentation check uses Python 3.9 or later. The contract check uses a clean RGDS checkout at commit `f6fa066c7e53d1d89d68ac8ef424b559ef58be34` and `jsonschema[format]==4.25.1`. [Existing requirements and scope](docs/validation.md), [CI environment](.github/workflows/validate.yml).
+
+## AI assistance and human review
+
+Codex assisted the recorded remediation through repository inspection, drafting and validation scripts. The owner authorized its merge and release. Independent review and substantive field validation remain open. [Remediation record](docs/remediation-report.md).
+
+Codex also prepared this navigation draft and its verification guide. The present design review concerns presentation and navigation. It leaves the method's evidence status and human-review limits as recorded. [Preserved baseline](https://github.com/node-and-norm/rgds-ai-governance/tree/0b2dd5bd9af964ffa90ddb4007ea4bbef94f52d8).
+
+## Cite the method
+
+This entry renders the existing identity in [CITATION.cff](CITATION.cff). Its software category describes the repository package; the research object is a working method/profile. [Citation explanation](docs/validation.md#human-review-and-preservation).
+
+```bibtex
+@software{banasihan2026aiassistance,
+  author = {Banasihan, Mark Julius},
+  title = {AI Assistance Governance: A Working Method/Profile for Bounded AI Participation},
+  year = {2026},
+  month = sep,
+  version = {1.1.0},
+  url = {https://github.com/node-and-norm/rgds-ai-governance},
+  note = {Released September 10, 2026. No DOI assigned}
+}
 ```
 
-[GDI](https://github.com/node-and-norm/governed-decision-intelligence) supplies the general architecture. This profile defines participation rules and an assessment procedure. [RGDS v2.0.1](https://github.com/node-and-norm/rgds/tree/v2.0.1) supplies the implementation contract inspected for this revision. This hierarchy describes conceptual roles, without asserting a formal cross-version conformance test. Changes to any layer require a compatibility review.
+<details>
+<summary>Complete prior entry and technical documents</summary>
 
-The [independent study](https://github.com/node-and-norm/rgds-independent-study) is separate historical/exploratory source review and modeling work. It is not validation evidence for this profile. Its DOI belongs to that research object and is not this repository's identifier. Proposed Node & Norm placement is `NN-DE`, method/profile; admission remains pending.
+The [prior README](README-2026-11-03.md) preserves the complete entry at [audit commit 0b2dd5b](https://github.com/node-and-norm/rgds-ai-governance/tree/0b2dd5bd9af964ffa90ddb4007ea4bbef94f52d8).
 
-## Six governance covenants
+- [Non-agentic assistance contract](contracts/non-agentic-ai-contract.md)
+- [Conceptual decision architecture](docs/ai-governance-conceptual-decision-architecture.md)
+- [What AI will not do](docs/what-ai-will-not-do.md)
+- [Framework crosswalk](docs/framework-crosswalk.md)
+- [Change history](CHANGELOG.md)
 
-These are adoption requirements. This documentation does not implement runtime controls or establish that a deployment follows them.
-
-| Covenant | Required practice | Failure mode addressed |
-|---|---|---|
-| 1. No autonomous or agentic behavior | AI must not decide, approve, accept risk, or trigger downstream actions | Unauthorized action |
-| 2. Assigned human authority and assessed independence | Identify the human owner and approvers; assess the non-AI decision basis | Ceremonial ownership or unsupported rationale |
-| 3. Explicit invocation | Record the specific task and AI use | Undisclosed influence |
-| 4. Review and rejection | A named reviewer records acceptance, rejection, or modification | Unreviewed reliance |
-| 5. Explicit risk acceptance | Humans document uncertainty, dissent, and accepted residual risk | Silent risk acceptance |
-| 6. Evidence subordination | Trace material rationale claims to inspectable non-AI sources | Model output substituting for evidence |
-
-The [contract](contracts/non-agentic-ai-contract.md) defines these requirements and the actual RGDS field checks. Under this profile, non-agentic assistance means a human invokes a bounded analytical task and reviews the output before its use. It is a local governance definition, not a claim about all AI systems.
-
-## AI Dependency Test
-
-The [AI Dependency Test](docs/ai-dependency-test.md) asks whether the non-AI decision basis can be reconstructed when model-generated artifacts are excluded from the evidentiary basis.
-
-1. Structural record completeness: retain and validate the complete original record, including truthful `ai_assistance` disclosure. Inventory the required decision, evidence, risk, and authority fields.
-2. Substantive independence: a qualified reviewer traces the material rationale to non-AI sources, records unsupported dependencies, and assesses whether those sources support reconstruction without model output.
-
-`ai_assistance` is a required top-level object in RGDS v2.0.1. Deleting it fails schema validation. Changing `used: true` to `used: false` would misstate historical AI use. Exclusion is an assessment view, not deletion from the source record. Structural success does not imply substantive success, regulatory defensibility, or a counterfactual claim that the same decision would have occurred without AI.
-
-The earlier [removability document](docs/ai-removability-proof.md) is retained with a supersession notice for provenance.
-
-## Interpretive framework crosswalk
-
-The [crosswalk](docs/framework-crosswalk.md) maps selected external concepts to possible records and review practices. It does not establish compliance, conformity, certification, control effectiveness, model credibility, or regulator acceptance. Applicability and adequacy require separate assessment in the adopting context.
-
-## Reading guide
-
-| Reader | Document |
-|---|---|
-| Executive or approver | [What AI will not do](docs/what-ai-will-not-do.md) |
-| Governance reviewer | [Non-agentic AI contract](contracts/non-agentic-ai-contract.md) |
-| Assessment reviewer | [AI Dependency Test](docs/ai-dependency-test.md) |
-| Architecture reviewer | [Conceptual decision architecture](docs/ai-governance-conceptual-decision-architecture.md) |
-| Framework reviewer | [Interpretive crosswalk](docs/framework-crosswalk.md) |
-| Example reader | [Hypothetical worked example](examples/rgds-dec-0003-ai-assisted-conditional-go.md) |
-| Maintainer | [Validation instructions](docs/validation.md) and [remediation report](docs/remediation-report.md) |
-
-## Repository contents
-
-```text
-rgds-ai-governance/
-├── README.md
-├── CHANGELOG.md
-├── CITATION.cff
-├── LICENSE
-├── NOTICE
-├── contracts/
-│   └── non-agentic-ai-contract.md
-├── docs/
-│   ├── ai-dependency-test.md
-│   ├── ai-governance-conceptual-decision-architecture.md
-│   ├── ai-removability-proof.md       (superseded historical text)
-│   ├── framework-crosswalk.md
-│   ├── remediation-report.md
-│   ├── validation.md
-│   └── what-ai-will-not-do.md
-├── examples/
-│   └── rgds-dec-0003-ai-assisted-conditional-go.md
-├── scripts/
-│   ├── check_docs.py
-│   └── check_rgds_contract.py
-└── .github/workflows/
-    └── validate.yml
-```
-
-## Status, limitations, and citation
-
-| Dimension | Current state |
-|---|---|
-| Object | AI Assistance Governance method/profile |
-| Development | Working method/profile, v1.1.0 |
-| Evidence | Documentation and contract inspection; hypothetical example only |
-| Review | AI-assisted remediation; owner authorized merge and release; independent review open |
-| Technical | Documentation profile with lightweight regression checks; no runtime enforcement |
-| Validation scope | Local links and selected RGDS v2.0.1 contract assumptions |
-| Open evidence gates | Qualified substantive application, independent assessment, field effectiveness |
-| Admission | Pending RGDS-family reassessment and institutional decision; no Registry admission asserted |
-
-No deployment study, regulatory outcome improvement, or demonstrated human independence is established here. A schema-valid record can contain fabricated or unexamined claims. Reviewer competence, evidence access, time, organizational authority, and actual interventions require separate evidence. [HIT](https://github.com/node-and-norm/human-influence-telemetry) is an adjacent assessment method for practical human influence; no HIT evaluation is claimed for this profile.
-
-[CHANGELOG.md](CHANGELOG.md) preserves historical entries and records corrections separately. Cite this method using [CITATION.cff](CITATION.cff), for version 1.1.0; no DOI is assigned. See the [v1.1.0 release](https://github.com/node-and-norm/rgds-ai-governance/releases/tag/v1.1.0).
-
-Author: **Mark Julius Banasihan**, [ORCID](https://orcid.org/0009-0001-8121-2878), [GitHub](https://github.com/mj3b). Existing authorship is retained. Codex assisted this remediation with repository inspection, drafting, and validation scripts under the owner's instructions; the owner authorized merge and release. This authorization does not establish independent review or substantive field validation. See [NOTICE](NOTICE) and [LICENSE](LICENSE).
+</details>
