@@ -1,3 +1,9 @@
+> **Research status, as of November 11, 2026: Working method/profile.**
+>
+> **What this repository holds.** A method for recording AI participation and examining the human basis of a decision, with a hypothetical example and selected contract checks.
+>
+> **What remains open.** Qualified application, independent assessment and field effectiveness remain open. Structural completeness does not establish substantive independence.
+
 <h1>
 <picture>
   <source media="(max-width: 600px)" srcset="assets/research/v1/banner-mobile-dark.svg">
